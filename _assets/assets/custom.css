@@ -1,0 +1,10 @@
+.author {
+  font-size: 0.7em;
+}
+
+.creationDate {
+  font-size: 0.4em;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}

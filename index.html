@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>web automation</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./_assets/assets/custom.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+## web automation
+
+by Glenn Goossens <!-- .element: class="author" -->
+</script></section><section  data-markdown><script type="text/template">
+## What?
+
+![what?](https://media0.giphy.com/media/JSueytO5O29yM/giphy.gif)
+</script></section><section  data-markdown><script type="text/template">
+## Automate
+
+* data retrieval <!-- .element: class="fragment" data-fragment-index="1" --> <span>→ web scraping</span> <!-- .element: class="fragment" data-fragment-index="2" -->
+* any task done in a browser <!-- .element: class="fragment" data-fragment-index="3" -->
+  * testing <!-- .element: class="fragment" data-fragment-index="4" -->
+</script></section><section  data-markdown><script type="text/template">
+![blabla](https://media2.giphy.com/media/iW8tsoJWcfPc4/giphy.gif)
+</script></section><section  data-markdown><script type="text/template">
+## Practical example
+
+![I'm here](https://media0.giphy.com/media/3o6gaWqfKO10sNMCEE/giphy.gif) <!-- .element: class="fragment" data-fragment-index="1" -->
+</script></section><section  data-markdown><script type="text/template">
+## Reminder hell
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+<div class="r-stack">
+  <img src="https://i.imgur.com/8nw3Q0r.png">
+  <img class="fragment" data-fragment-index="1" src="https://media2.giphy.com/media/Lopx9eUi34rbq/giphy.gif">
+</div>
+</script></section><section  data-markdown><script type="text/template">
+## How do we automate it?
+
+* automate click <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* automate the request <!-- .element: class="fragment" data-fragment-index="2" -->
+</script></section><section  data-markdown><script type="text/template">
+![let me see](https://media3.giphy.com/media/dBUbmzdlcH3sCXaeRQ/giphy.gif)
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"none"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
